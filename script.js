@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function getBotResponse(input) {
-    const API_KEY = 'AIzaSyAXAd4wjccEzawFlBJCVrlKbwVJEKr5QxQ'; // Replace with your Gemini key
+    const API_KEY = 'Your_API_Key'; // Replace with your Gemini key
     const URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
     
     try {
