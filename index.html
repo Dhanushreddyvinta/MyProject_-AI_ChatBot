@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>University Course Catalog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>UniCourses</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Explore Your Next Course</h2>
+    <p>Select and enroll in courses seamlessly.</p>
+    <button>Get Started</button>
+  </section>
+
+  <!-- Courses Listing -->
+  <section id="courses" class="courses">
+    <h2>Available Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>CS101: Intro to Computer Science</h3>
+        <p>An introduction to the fundamentals of computer science.</p>
+        <span>Seats Available: 50</span>
+        <button>Enroll</button>
+      </div>
+      <div class="course-card">
+        <h3>MATH201: Calculus II</h3>
+        <p>Advanced techniques in differential and integral calculus.</p>
+        <span>Seats Available: 30</span>
+        <button>Enroll</button>
+      </div>
+      <div class="course-card">
+        <h3>HIST150: World History</h3>
+        <p>Survey of world civilizations from ancient to modern times.</p>
+        <span>Seats Available: 45</span>
+        <button>Enroll</button>
+      </div>
+      <div class="course-card">
+        <h3>ENG101: English Literature</h3>
+        <p>Study of classic and contemporary English literature.</p>
+        <span>Seats Available: 40</span>
+        <button>Enroll</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      UniCourses is your one-stop platform to browse and enroll in courses offered by your university.
+      Our chatbot is here to help with any queries you have.
+    </p>
+  </section>
+
+  <!-- Chatbot -->
+  <div id="chatbot-icon">💬</div>
+  <div id="chatbot-container" class="hidden">
+    <div id="chatbot-header">
+      <span>ChatBot</span>
+      <button id="close-btn">&times;</button>
+    </div>
+    <div id="chatbot-body"></div>
+    <div id="chatbot-input-container">
+      <input type="text" id="chatbot-input" placeholder="Ask me about courses..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
